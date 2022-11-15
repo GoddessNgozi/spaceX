@@ -3,7 +3,7 @@ import { configureStore, applyMiddleware } from '@reduxjs/toolkit';
 import thunk from 'redux-thunk';
 
 // Slices
-import dragonsSlice from './dragons/dragonsSlice';
+import dragonsSlice from './dragons/dragonsSlice.js';
 
 // Combine slices reducer
 const rootReducer = {
