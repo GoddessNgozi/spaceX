@@ -6,10 +6,10 @@ import { Routes, Route} from 'react-router-dom';
 import { Provider } from 'react-redux';
 
 // Store
-import Store from './redux/configureStore';
+import Store from "./Redux/configureStore"
 
 // Components
-import NavBar from './components/Header/NavBar';
+import Header from './components/Header/Header';
 import Dragons from './components/Dragons/Dragons';
 import Rockets from './components/Rockets/Rockets';
 import Missions from './components/Missions/Missions';
@@ -18,7 +18,7 @@ import MyProfile from './components/MyProfile/MyProfile';
 function App() {
   return (
     <Provider store={Store}>
-      <NavBar />
+      <Header />
       <Routes>
         <Route path="/" element={<Rockets />} />
         <Route path="/Dragons" element={<Dragons />} />

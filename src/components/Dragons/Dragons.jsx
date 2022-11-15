@@ -1,6 +1,22 @@
+// Component
+import DragonItem from "./DragonItem";
+
 const Dragons = () => {
+  const dragons = [];
+
   return(
-    <h1>Dragons</h1>
+    <ul className="dragons-list">
+      {
+        dragons.map((dragon) => {
+          <DragonItem 
+            key={dragon.id}
+            name={dragon.name}
+            type={dragon.type}
+            img={dragon.flickr_images}
+          />
+        })
+      }
+    </ul>
   )
 }
 
