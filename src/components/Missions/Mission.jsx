@@ -16,10 +16,10 @@ function Mission({
   return (
     <>
       <tr key={id}>
-        <td>{name}</td>
-        <td>{description}</td>
-        <td><Badge bg="secondary">NOT A MEMBER</Badge></td>
-        <td><Button id={id} onClick={reserved ? '' : join} variant={reserved ? 'outline-danger' : 'outline-secondary'}>{reserved ? 'Leave Misson' : 'Join Mission'}</Button></td>
+        <td className="border">{name}</td>
+        <td style={{maxWidth: '40rem'}} className="border">{description}</td>
+        <td className="border"><Badge bg="secondary">NOT A MEMBER</Badge></td>
+        <td className="border"><Button id={id} onClick={reserved ? '' : join} variant={reserved ? 'outline-danger' : 'outline-secondary'}>{reserved ? 'Leave Misson' : 'Join Mission'}</Button></td>
       </tr>
     </>
   );
